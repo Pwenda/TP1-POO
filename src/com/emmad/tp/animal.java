@@ -1,3 +1,5 @@
+package com.emmad.tp;
+
 public class animal {
     private String name;
     private int age;
@@ -15,6 +17,10 @@ public class animal {
 
     public void makeSound() {
         System.out.println(name + " makes a sound: " + sound);
+    }
+
+    public void eat() {
+        System.out.println(name + " is eating.");
     }
 
     public static class Cow extends animal {
