@@ -9,6 +9,14 @@ public class animal {
         this.sound = sound;
     }
 
+    public static void commonInfo() {
+        System.out.println("All animals are kind.");
+    }
+
+    public void makeSound() {
+        System.out.println(name + " makes a sound: " + sound);
+    }
+
     public String getSound() {
         return name + " says: " + sound;
     }
@@ -23,7 +31,7 @@ public class animal {
 
     public static class Cow extends animal {
         public Cow(String name, int age, String sound) {
-            super("Patricia", 2, "Moo");
+            super(name, age, sound);
         }
     }
 }
