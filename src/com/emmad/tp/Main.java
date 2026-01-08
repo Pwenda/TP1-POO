@@ -22,5 +22,9 @@ public class Main {
                 ((Pet) a).play();
             }
         }
+
+        Owner owner = new Owner("Emma");
+        owner.addAnimal((animal) pet1);
+        owner.addAnimal((animal) pet2);
     }
 }

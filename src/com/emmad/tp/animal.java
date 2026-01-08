@@ -1,6 +1,6 @@
 package com.emmad.tp;
 
-public class animal {
+public abstract class animal {
     private String name;
     protected int age;
     private String sound;
