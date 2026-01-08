@@ -12,19 +12,27 @@ public class animal {
     }
 
     public static void commonInfo() {
-        System.out.println("All animals are kind.");
+        System.out.println("We are kind.");
     }
 
     public void makeSound() {
-        System.out.println(name + " makes a sound: " + sound);
+        System.out.println(name + " say " + sound);
     }
 
-    public void eat() {
-        System.out.println(name + " is eating.");
+    public static void eat() {
+        System.out.println("eating");
+    }
+    public static void eat(String food) {
+        System.out.println("eating " + food);
     }
 
     public static class Cow extends animal {
         public Cow(String name, int age, String sound) {
+            super(name, age, sound);
+        }
+    }
+    public static class Dog extends animal {
+        public Dog(String name, int age, String sound) {
             super(name, age, sound);
         }
     }
